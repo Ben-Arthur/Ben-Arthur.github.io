@@ -10,6 +10,7 @@ img {
     display: block;
 }
 body {
+    background-image: url("../image/MainBGPattern.png");
     background-color: #e2d9c4;
 }
 .text {
@@ -20,8 +21,8 @@ body {
     display: flex;
     background-color: #4b3325;
     width: 75%;
-    min-width: 720px;
-    margin: 40px auto;
+    min-width: 600px;
+    margin: 40px auto 40px auto;
     padding: 10px;
 }
 #leftColumn {
@@ -69,4 +70,8 @@ body {
     padding: 10px;
     height: auto;
     flex: 1;
+}
+#bodyEnd {
+    padding: 10px;
+    background-color: grey;
 }
