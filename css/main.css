@@ -2,12 +2,24 @@ html, div, p {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    font-family: monospace;
+    font-family: monospace, Calibri;
 }
 img {
     margin: 0;
     padding: 0;
     display: block;
+}
+a {
+    text-decoration: none;
+}
+a:link {
+    color: inherit;
+}
+a:visited {
+    color: inherit;
+}
+a:hover {
+    font-weight: bold;
 }
 body {
     background-image: url("../image/MainBGPattern.png");
@@ -28,19 +40,30 @@ body {
 #leftColumn {
     float: left;
     width: 320px;
-    text-align: right;
+    text-align: center;
     margin-right: 10px;
 }
 #leftHead, #leftHead p {
     background-color: #f85f43;
     font-size: 20px;
-    text-align: center;
+    font-family: Calibri;
 }
 .subpage {
+    display: flex;
+    align-items: center;
     margin-top: 10px;
-    padding: 8px;
     font-size: 12px;
     background-color: #f85f43;
+    overflow: hidden;
+    min-height: 32px;
+}
+.subpage span {
+    display: block;
+    float: left;
+    flex: 1;
+}
+.subpage img {
+    float: left;
 }
 #rightColumn {
     width: 100%;
@@ -53,6 +76,7 @@ body {
     overflow: hidden;
 }
 #title {
+    font-family: Calibri;
     flex: 1;
     padding: 5px 0 0 10px;
     text-align: left;
