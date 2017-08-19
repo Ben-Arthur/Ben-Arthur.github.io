@@ -57,6 +57,9 @@ body {
     overflow: hidden;
     min-height: 32px;
 }
+.subpage:hover {
+    background-color: #f4a460;
+}
 .subpage span {
     display: block;
     float: left;
