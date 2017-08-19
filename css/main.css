@@ -86,7 +86,7 @@ body {
 #timeSection {
     padding: 5px;
     float: right;
-    background: grey;
+    background: #f5deb3;
     max-width: 50%;
 }
 #body {
@@ -97,5 +97,5 @@ body {
 }
 #bodyEnd {
     padding: 10px;
-    background-color: grey;
+    background-color: #f5deb3;
 }
