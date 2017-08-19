@@ -9,14 +9,12 @@ Code projects page. Calculator for KSSU data?
 
 Background images!
 
-About me
+About me (in progress)
 
 Smash page?
 
-Youtube page (since it includes other topics, perhaps just a link)?
-
 Math
 
-Blog format? Ehhh
+Music!
 
 Fun page code
