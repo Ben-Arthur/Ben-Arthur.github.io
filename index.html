@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Home Page</title>
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <title>Front Page</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="icon" type="image/svg" href="image/FoxIcon.png" />
     <script>
         function startTime() {
             var today = new Date();
@@ -13,9 +14,8 @@
             var s = today.getSeconds();
             m = checkTime(m);
             s = checkTime(s);
-            var timeText = "Your time is " + h + ":" + m + ":" + s;
+            var timeText = "The time is:" + "<br/>" + h + ":" + m + ":" + s;
             document.getElementById('timeSection').innerHTML = timeText;
-            document.getElementById('timeSection').style.color = "#" + Math.floor(Math.random() * 255).toString(16) + Math.floor(Math.random() * 255).toString(16) + Math.floor(Math.random() * 255).toString(16);
             var t = setTimeout(startTime, 1000);
         }
         function checkTime(i) {
@@ -26,14 +26,39 @@
 </head>
 <body onload="startTime()">
     <div id="wrapper">
-        <div id="header">
-            <p id="title"><em>Hello!</em></p>
-            <p id="timeSection">Something is wrong.</p>
-        </div>
+        <div id="leftColumn">
+            <div id="leftHead">
+                <p>Youtube Channel:</p>
+                <a href="https://www.youtube.com/channel/UCFD2lTqJ9VRVEM2_9TiLT_A">
+                    <img src="image/FoxImage.png" alt="My usual icon" width="100%" />
+                </a>
+            </div>
+            <div class="subpage">
+                Kirby Super Star Ultra
+            </div>
+            <div class="subpage">
 
-        <div id="body">
-            Filler content.
-            
+            </div>
+            <div class="subpage">
+
+            </div>
+            <div class="subpage">
+
+            </div>
+            <div class="subpage">
+
+            </div>
+        </div>
+        
+        <div id="rightColumn">
+            <div id="head">
+                <p id="title">About Me:</p>
+                <p id="timeSection">If you see this, something is wrong.</p>
+            </div>
+
+            <div id="body">
+                Filler content. Maybe this should be the About page?
+            </div>
         </div>
     </div>
 </body>

@@ -1,26 +1,65 @@
 html, div, p {
-	margin: 0;
-	padding: 0;
-	font-size: 16px;
-	font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: monospace;
+}
+img {
+    margin: 0;
+    padding: 0;
+    display: block;
 }
 body {
-	background-color: black;
+    background-color: #e2d9c4;
 }
 #wrapper {
-	background-color: darkorange;
-	width: 80%;
-	margin: 40px auto;
-	padding: 10px;
+    display: flex;
+    background-color: #4b3325;
+    width: 75%;
+    min-width: 800px;
+    margin: 40px auto;
+    padding: 10px;
 }
-#header {
-	padding: 10px;
-	background-color: orangered;
+#leftColumn {
+    float: left;
+    width: 320px;
+    text-align: right;
+    margin-right: 10px;
+}
+#leftHead, #leftHead p {
+    background-color: #f85f43;
+    font-size: 20px;
+    text-align: center;
+}
+.subpage {
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 12px;
+    background-color: #f85f43;
+}
+#rightColumn {
+    background-color: #fdfdf1;
+    width: 100%;
+}
+#head {
+    background-color: #f85f43;
+    display: flex;
+    overflow: hidden;
 }
 #title {
-	font-size: 24px;
+    flex: 1;
+    padding: 0px;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+    font-size: 24px;
+}
+#timeSection {
+    padding: 5px;
+    float: right;
+    background: grey;
 }
 #body {
-	padding: 10px;
-	background-color: brown;
+    padding: 10px;
+    height: auto;
 }
