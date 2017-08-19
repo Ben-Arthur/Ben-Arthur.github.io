@@ -12,11 +12,15 @@ img {
 body {
     background-color: #e2d9c4;
 }
+.text {
+    border-left: dashed 1px #f85f43;
+    padding-left: 10px;
+}
 #wrapper {
     display: flex;
     background-color: #4b3325;
     width: 75%;
-    min-width: 800px;
+    min-width: 720px;
     margin: 40px auto;
     padding: 10px;
 }
@@ -38,8 +42,9 @@ body {
     background-color: #f85f43;
 }
 #rightColumn {
-    background-color: #fdfdf1;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 #head {
     background-color: #f85f43;
@@ -48,18 +53,20 @@ body {
 }
 #title {
     flex: 1;
-    padding: 0px;
-    text-align: center;
-    vertical-align: middle;
+    padding: 5px 0 0 10px;
+    text-align: left;
     float: left;
-    font-size: 24px;
+    font-size: 30px;
 }
 #timeSection {
     padding: 5px;
     float: right;
     background: grey;
+    max-width: 50%;
 }
 #body {
+    background-color: #fdfdf1;
     padding: 10px;
     height: auto;
+    flex: 1;
 }
