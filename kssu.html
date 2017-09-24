@@ -1,30 +1,13 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <title>Front Page</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/kssu.css" />
     <link rel="icon" type="image/svg" href="image/FoxIcon.png" />
-    <script>
-        function startTime() {
-            var today = new Date();
-            var h = today.getHours();
-            var m = today.getMinutes();
-            var s = today.getSeconds();
-            m = checkTime(m);
-            s = checkTime(s);
-            var timeText = "The time is:" + "<br/>" + h + ":" + m + ":" + s;
-            document.getElementById('timeSection').innerHTML = timeText;
-            var t = setTimeout(startTime, 1000);
-        }
-        function checkTime(i) {
-            if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
-            return i;
-        }
-    </script>
 </head>
-<body onload="startTime()">
+<body>
     <div id="wrapper">
         <div id="leftColumn">
             <div id="leftHead">
@@ -33,7 +16,7 @@
                     <img src="image/FoxImage.png" alt="My usual icon" width="100%" />
                 </a>
             </div>
-            <a href="kssu.html">
+            <a href="#">
                 <div class="subpage">
                     <img src="image/KSSUIcon.png" />
                     <span>Kirby: Super Star Ultra</span>
@@ -61,22 +44,17 @@
                 </div>
             </a>
         </div>
-        
+
         <div id="rightColumn">
             <div id="head">
                 <p id="title">About Me:</p>
-                <p id="timeSection"></p>
             </div>
 
             <div id="body">
-                <p class="text">Hello, my name is Ben Hall! I have a strong affinity for math, classical music, programming, gaming, and knitting? That's basically math.</p>
-                <br />
-                <p class="text">In particular, I'm aiming to document game mechanics for Tool-Assisted Speedruns and learn more about programming, math, and everything that comes with it. I'll probably include a few miscellaneous side-projects too.</p>
-                <br />
-                <p class="text">Only the KSSU link goes anywhere so far. I haven't made the other pages yet!</p>
+                <p class="text">No content yet.</p>
             </div>
 
-            <div id="bodyEnd">This is a footer. Not sure what to put here <em>yet</em></div>
+            <div id="bodyEnd">This is a footer. Can you not tell?</div>
         </div>
     </div>
 </body>
