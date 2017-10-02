@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Front Page</title>
+    <title>Kirby SSU Data</title>
     <link rel="stylesheet" type="text/css" href="css/kssu.css" />
     <link rel="icon" type="image/svg" href="image/FoxIcon.png" />
 </head>
@@ -47,11 +47,58 @@
 
         <div id="rightColumn">
             <div id="head">
-                <p id="title">About Me:</p>
+                <p id="title">Temporary Title</p>
             </div>
 
             <div id="body">
-                <p class="text">No content yet.</p>
+                <h1>Collision-box data structure (WIP!)</h1>
+                <p>Example: The game uses a 4 byte pointer at memory address 0x0207703C to get data for Kirby's current hitbox.</p>
+                <table>
+                    <tr>
+                        <th>Offset</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>0x00</td>
+                        <td>0000 (always?)</td>
+                    </tr>
+                    <tr>
+                        <td>0x02</td>
+                        <td>Hitbox frame duration</td>
+                    </tr>
+                    <tr>
+                        <td>0x03</td>
+                        <td>Flag for end(01)/repeat(04)/continue(00)?</td>
+                    </tr>
+                    <tr>
+                        <td>0x04</td>
+                        <td>Hitbox Damage (signed)</td>
+                    </tr>
+                    <tr>
+                        <td>0x06</td>
+                        <td>unknown</td>
+                    </tr>
+                    <tr>
+                        <td>0x08</td>
+                        <td>unknown; change first byte to A and it replaces blocks with different types of surfaces???</td>
+                    </tr>
+                    <tr>
+                        <td>0x0C</td>
+                        <td>unknown</td>
+                    </tr>
+                    <tr>
+                        <td>0x10</td>
+                        <td>Hitbox offset (x,y) (top left pixel)</td>
+                    </tr>
+                    <tr>
+                        <td>0x14</td>
+                        <td>unknown (pair of 2 byte signed ints)</td>
+                    </tr>
+                    <tr>
+                        <td>0x18</td>
+                        <td>Hitbox size (x,y)</td>
+                    </tr>
+                </table>
             </div>
 
             <div id="bodyEnd">This is a footer. Can you not tell?</div>
