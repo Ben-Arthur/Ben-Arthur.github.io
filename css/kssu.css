@@ -108,6 +108,10 @@ body {
     height: auto;
     flex: 1;
 }
+.header {
+    font-size: 24px;
+    text-decoration-style: solid;
+}
 table {
     border-collapse: collapse;
     width: 100%;
