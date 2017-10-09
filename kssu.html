@@ -76,23 +76,47 @@
                     </tr>
                     <tr>
                         <td>0x06</td>
+                        <td>unknown. Possibly hitbox ID?</td>
+                    </tr>
+                    <tr>
+                        <td>0x07</td>
                         <td>unknown</td>
                     </tr>
                     <tr>
                         <td>0x08</td>
-                        <td>unknown; change first byte to A and it replaces blocks with different types of surfaces???</td>
+                        <td>2 flags? Seems to be between 0 and 2</td>
+                    </tr>
+                    <tr>
+                        <td>0x0A</td>
+                        <td>Effect (normal, can't hit bosses, fire, ice, electric, etc.)</td>
+                    </tr>
+                    <tr>
+                        <td>0x0B</td>
+                        <td>Strength (related to length/direction of knockback animation)</td>
                     </tr>
                     <tr>
                         <td>0x0C</td>
                         <td>unknown</td>
                     </tr>
                     <tr>
+                        <td>0x0D</td>
+                        <td>unknown (always 0?)</td>
+                    </tr>
+                    <tr>
+                        <td>0x0E</td>
+                        <td>unknown. Possibly hitbox group ID???</td>
+                    </tr>
+                    <tr>
+                        <td>0x0F</td>
+                        <td>unknown. Usually 0x0, but 0xFF for hitboxes with no damage</td>
+                    </tr>
+                    <tr>
                         <td>0x10</td>
-                        <td>Hitbox offset (x,y) (top left pixel)</td>
+                        <td>Offset (x,y)</td>
                     </tr>
                     <tr>
                         <td>0x14</td>
-                        <td>unknown (pair of 2 byte signed ints)</td>
+                        <td>Offset2 (x,y)</td>
                     </tr>
                     <tr>
                         <td>0x18</td>
