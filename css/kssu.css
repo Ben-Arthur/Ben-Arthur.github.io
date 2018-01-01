@@ -15,17 +15,17 @@ a {
     text-decoration: none;
 }
 
-    a:link {
-        color: inherit;
-    }
+a:link {
+    color: inherit;
+}
 
-    a:visited {
-        color: inherit;
-    }
+a:visited {
+    color: inherit;
+}
 
-    a:hover {
-        font-weight: bold;
-    }
+a:hover {
+    font-weight: bold;
+}
 
 body {
     background-image: url("../image/MainBGPattern.png");
@@ -38,55 +38,11 @@ body {
 }
 
 #wrapper {
-    display: flex;
     background-color: #4b3325;
     width: 75%;
     min-width: 600px;
     margin: 40px auto 40px auto;
     padding: 10px;
-}
-
-#leftColumn {
-    float: left;
-    width: 320px;
-    text-align: center;
-    margin-right: 10px;
-}
-
-#leftHead, #leftHead p {
-    background-color: #f85f43;
-    font-size: 20px;
-    font-family: Calibri;
-}
-
-.subpage {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    font-size: 12px;
-    background-color: #f85f43;
-    overflow: hidden;
-    min-height: 32px;
-}
-
-.subpage:hover {
-    background-color: #eedd82;
-}
-
-.subpage span {
-    display: block;
-    float: left;
-    flex: 1;
-}
-
-.subpage img {
-   float: left;
-}
-
-#rightColumn {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 #head {
@@ -95,18 +51,17 @@ body {
 }
 
 #title {
-    font-family: Calibri;
-    padding: 5px 0 0 10px;
-    text-align: left;
-    float: left;
+    width: 100%;
+    text-align:center;
+    font-family: Arial;
     font-size: 30px;
+    padding: 10px 0;
 }
 
 #body {
     background-color: #fdfdf1;
     padding: 10px;
     height: auto;
-    flex: 1;
 }
 .header {
     font-size: 24px;
