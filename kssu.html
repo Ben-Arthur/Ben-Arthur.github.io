@@ -15,7 +15,7 @@
 
         <div id="body">
             <p class="header">Collision-box data structure</p>
-            <p>The game allocates a linked list of "objects" (starting at memory address 0x02076f00) and stores pointers to various properties it needs, so that it can communicate what happens to another object when they intersect. The second pointer of each object is the collision box data:</p>
+            <p>The game allocates a linked list of "objects" (starting at memory address 0x02076f00) and stores pointers to various properties it needs, so that it can communicate what happens to another object when they intersect. The second pointer of each object is the "hitbox" data:</p>
             <table>
                 <tr>
                     <th>Offset</th>
