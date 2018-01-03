@@ -1,20 +1,18 @@
 # Ben-Arthur.github.io
 Website for some of my personal projects, such as storing data for games and messing with code.
 
-*TODO*:
+*TO DO*:
 
-Kirby Super Star Ultra sub-site for frame data, damage, health, speed tables, and more
+Kirby Super Star Ultra sub-site for everything I can find related to how the game works and what I aim to find when TASing it.
 
-Code projects page. Calculator for KSSU data?
+More/better background images/reformatting.
 
-Background images!
+About me (still in progress)
 
-About me (in progress)
-
-Smash page?
+Smash?
 
 Math
 
-Music!
+Music
 
-Fun page code
+Code / other things

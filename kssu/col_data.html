@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Kirby SSU Data</title>
+    <link rel="stylesheet" type="text/css" href="../css/kssu.css" />
+    <link rel="icon" type="image/svg" href="image/FoxIcon.png" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="head">
+            <p id="title">[Kirby SSU Collision Data]</p>
+        </div>
+
+        <div id="body">
+            <p class="header">Collision-box data structure</p>
+            <p>The game allocates a linked list of "objects" (starting at memory address 0x02076f00) and stores pointers to various properties it needs, so that it can communicate what happens to another object when they intersect. The second pointer of each object is the "hitbox" data:</p>
+            <table>
+                <tr>
+                    <th>Offset</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>0x00</td>
+                    <td>Padding? (0x0000)</td>
+                </tr>
+                <tr>
+                    <td>0x02</td>
+                    <td>Hitbox frame duration (behavior is generally more complicated than this)</td>
+                </tr>
+                <tr>
+                    <td>0x03</td>
+                    <td>Flag for end(01)/repeat(04)/continue(00)? once timer reaches 0</td>
+                </tr>
+                <tr>
+                    <td>0x04</td>
+                    <td>Hitbox Damage (signed)</td>
+                </tr>
+                <tr>
+                    <td>0x06</td>
+                    <td>unknown</td>
+                </tr>
+                <tr>
+                    <td>0x07</td>
+                    <td>unknown</td>
+                </tr>
+                <tr>
+                    <td>0x08</td>
+                    <td>unknown</td>
+                </tr>
+                <tr>
+                    <td>0x09</td>
+                    <td>unknown</td>
+                </tr>
+                <tr>
+                    <td>0x0A</td>
+                    <td>Effect (normal, can't hit bosses, fire, ice, electric, etc.)</td>
+                </tr>
+                <tr>
+                    <td>0x0B</td>
+                    <td>Strength (related to length/direction of knockback animation)</td>
+                </tr>
+                <tr>
+                    <td>0x0C</td>
+                    <td>unknown</td>
+                </tr>
+                <tr>
+                    <td>0x0D</td>
+                    <td>unknown</td>
+                </tr>
+                <tr>
+                    <td>0x0E</td>
+                    <td>On-hit sound effect</td>
+                </tr>
+                <tr>
+                    <td>0x10</td>
+                    <td>Offset of the collision-box's center point from Kirby's position (x,y)</td>
+                </tr>
+                <tr>
+                    <td>0x14</td>
+                    <td>Offset of the top left corner from the center point (x,y)</td>
+                </tr>
+                <tr>
+                    <td>0x18</td>
+                    <td>Offset of the bottom right corner from the top left corner (x,y)</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="bodyEnd">This page is a WIP</div>
+    </div>
+</body>
+</html>
